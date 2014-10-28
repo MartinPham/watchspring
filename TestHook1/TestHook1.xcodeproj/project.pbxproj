@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E8AA6AF19FFEF8600893146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8AA6AE19FFEF8600893146 /* Foundation.framework */; };
+		5E8AA6B919FFEF8600893146 /* TestHook1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E8AA6B819FFEF8600893146 /* TestHook1.mm */; };
+		5E8AA6C41A001B0C00893146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8AA6C31A001B0C00893146 /* UIKit.framework */; };
+		5E8AA6CB1A00266D00893146 /* LMSpringboardItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8AA6C51A00266D00893146 /* LMSpringboardItemView.h */; };
+		5E8AA6CC1A00266D00893146 /* LMSpringboardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8AA6C61A00266D00893146 /* LMSpringboardItemView.m */; };
+		5E8AA6CD1A00266D00893146 /* LMSpringboardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8AA6C71A00266D00893146 /* LMSpringboardView.h */; };
+		5E8AA6CE1A00266D00893146 /* LMSpringboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8AA6C81A00266D00893146 /* LMSpringboardView.m */; };
+		5E8AA6CF1A00266D00893146 /* LMViewControllerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8AA6C91A00266D00893146 /* LMViewControllerView.h */; };
+		5E8AA6D01A00266D00893146 /* LMViewControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8AA6CA1A00266D00893146 /* LMViewControllerView.m */; };
+		5E8AA6D31A0026A900893146 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8AA6D11A0026A900893146 /* ViewController.h */; };
+		5E8AA6D41A0026A900893146 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8AA6D21A0026A900893146 /* ViewController.m */; };
+		5E8AA6D61A00274F00893146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8AA6D51A00274F00893146 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E8AA6AB19FFEF8600893146 /* TestHook1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = TestHook1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8AA6AE19FFEF8600893146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E8AA6B319FFEF8600893146 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		5E8AA6B419FFEF8600893146 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		5E8AA6B619FFEF8600893146 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		5E8AA6B719FFEF8600893146 /* TestHook1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestHook1-Prefix.pch"; sourceTree = "<group>"; };
+		5E8AA6B819FFEF8600893146 /* TestHook1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestHook1.mm; sourceTree = "<group>"; };
+		5E8AA6BD19FFEF8600893146 /* TestHook1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = TestHook1.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/TestHook1.plist; sourceTree = "<group>"; };
+		5E8AA6C31A001B0C00893146 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E8AA6C51A00266D00893146 /* LMSpringboardItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSpringboardItemView.h; sourceTree = "<group>"; };
+		5E8AA6C61A00266D00893146 /* LMSpringboardItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSpringboardItemView.m; sourceTree = "<group>"; };
+		5E8AA6C71A00266D00893146 /* LMSpringboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSpringboardView.h; sourceTree = "<group>"; };
+		5E8AA6C81A00266D00893146 /* LMSpringboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSpringboardView.m; sourceTree = "<group>"; };
+		5E8AA6C91A00266D00893146 /* LMViewControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMViewControllerView.h; sourceTree = "<group>"; };
+		5E8AA6CA1A00266D00893146 /* LMViewControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMViewControllerView.m; sourceTree = "<group>"; };
+		5E8AA6D11A0026A900893146 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E8AA6D21A0026A900893146 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E8AA6D51A00274F00893146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E8AA6A719FFEF8600893146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8AA6D61A00274F00893146 /* CoreGraphics.framework in Frameworks */,
+				5E8AA6C41A001B0C00893146 /* UIKit.framework in Frameworks */,
+				5E8AA6AF19FFEF8600893146 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E8AA6A119FFEF8600893146 = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6B019FFEF8600893146 /* TestHook1 */,
+				5E8AA6AD19FFEF8600893146 /* Frameworks */,
+				5E8AA6AC19FFEF8600893146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E8AA6AC19FFEF8600893146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6AB19FFEF8600893146 /* TestHook1.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E8AA6AD19FFEF8600893146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6D51A00274F00893146 /* CoreGraphics.framework */,
+				5E8AA6C31A001B0C00893146 /* UIKit.framework */,
+				5E8AA6AE19FFEF8600893146 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E8AA6B019FFEF8600893146 /* TestHook1 */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6D11A0026A900893146 /* ViewController.h */,
+				5E8AA6D21A0026A900893146 /* ViewController.m */,
+				5E8AA6C51A00266D00893146 /* LMSpringboardItemView.h */,
+				5E8AA6C61A00266D00893146 /* LMSpringboardItemView.m */,
+				5E8AA6C71A00266D00893146 /* LMSpringboardView.h */,
+				5E8AA6C81A00266D00893146 /* LMSpringboardView.m */,
+				5E8AA6C91A00266D00893146 /* LMViewControllerView.h */,
+				5E8AA6CA1A00266D00893146 /* LMViewControllerView.m */,
+				5E8AA6B819FFEF8600893146 /* TestHook1.mm */,
+				5E8AA6B119FFEF8600893146 /* Package */,
+				5E8AA6B519FFEF8600893146 /* Supporting Files */,
+			);
+			path = TestHook1;
+			sourceTree = "<group>";
+		};
+		5E8AA6B119FFEF8600893146 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6B219FFEF8600893146 /* DEBIAN */,
+				5E8AA6BA19FFEF8600893146 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		5E8AA6B219FFEF8600893146 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6B319FFEF8600893146 /* control.txt */,
+				5E8AA6B419FFEF8600893146 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		5E8AA6B519FFEF8600893146 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6B619FFEF8600893146 /* PackageVersion.plist */,
+				5E8AA6B719FFEF8600893146 /* TestHook1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E8AA6BA19FFEF8600893146 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6BB19FFEF8600893146 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		5E8AA6BB19FFEF8600893146 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6BC19FFEF8600893146 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		5E8AA6BC19FFEF8600893146 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				5E8AA6BD19FFEF8600893146 /* TestHook1.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E8AA6A819FFEF8600893146 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8AA6CF1A00266D00893146 /* LMViewControllerView.h in Headers */,
+				5E8AA6D31A0026A900893146 /* ViewController.h in Headers */,
+				5E8AA6CD1A00266D00893146 /* LMSpringboardView.h in Headers */,
+				5E8AA6CB1A00266D00893146 /* LMSpringboardItemView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E8AA6AA19FFEF8600893146 /* TestHook1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8AA6C019FFEF8600893146 /* Build configuration list for PBXNativeTarget "TestHook1" */;
+			buildPhases = (
+				5E8AA6A619FFEF8600893146 /* Sources */,
+				5E8AA6A719FFEF8600893146 /* Frameworks */,
+				5E8AA6A819FFEF8600893146 /* Headers */,
+				5E8AA6A919FFEF8600893146 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestHook1;
+			productName = TestHook1;
+			productReference = 5E8AA6AB19FFEF8600893146 /* TestHook1.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E8AA6A219FFEF8600893146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					5E8AA6AA19FFEF8600893146 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E8AA6A519FFEF8600893146 /* Build configuration list for PBXProject "TestHook1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E8AA6A119FFEF8600893146;
+			productRefGroup = 5E8AA6AC19FFEF8600893146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E8AA6AA19FFEF8600893146 /* TestHook1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E8AA6A919FFEF8600893146 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E8AA6A619FFEF8600893146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8AA6D01A00266D00893146 /* LMViewControllerView.m in Sources */,
+				5E8AA6CC1A00266D00893146 /* LMSpringboardItemView.m in Sources */,
+				5E8AA6CE1A00266D00893146 /* LMSpringboardView.m in Sources */,
+				5E8AA6B919FFEF8600893146 /* TestHook1.mm in Sources */,
+				5E8AA6D41A0026A900893146 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5E8AA6BE19FFEF8600893146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		5E8AA6BF19FFEF8600893146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		5E8AA6C119FFEF8600893146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestHook1/TestHook1-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.104;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		5E8AA6C219FFEF8600893146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestHook1/TestHook1-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.104;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E8AA6A519FFEF8600893146 /* Build configuration list for PBXProject "TestHook1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8AA6BE19FFEF8600893146 /* Debug */,
+				5E8AA6BF19FFEF8600893146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E8AA6C019FFEF8600893146 /* Build configuration list for PBXNativeTarget "TestHook1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8AA6C119FFEF8600893146 /* Debug */,
+				5E8AA6C219FFEF8600893146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E8AA6A219FFEF8600893146 /* Project object */;
+}

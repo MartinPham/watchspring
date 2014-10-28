@@ -1,0 +1,17 @@
+Package: gg.ki.TestHook1
+Name: TestHook1
+Version: 1.0-1
+Description: 
+Section: Tweaks
+Depends: firmware (>= 8.0), mobilesubstrate, com.conradkramer.open
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Ki.gg
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
