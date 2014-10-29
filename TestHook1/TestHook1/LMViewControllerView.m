@@ -35,12 +35,16 @@
 	  }else{
 		  _appView.contentMode = UIViewContentModeScaleAspectFit;
 	  }
-	  id task = [objc_getClass("NSTask") new];
-	  [task setLaunchPath:@"/usr/bin/open"];
-	  [task setArguments:[NSArray arrayWithObject:item.id]];
-	  [task launch];
+	 
+//	  id task = [objc_getClass("NSTask") new];
+//	  [task setLaunchPath:@"/usr/bin/open"];
+//	  [task setArguments:[NSArray arrayWithObject:item.id]];
+//	  [task launch];
 	  
+
+//	  [[NSClassFromString(@"SBUIController") sharedInstance] activateApplicationAnimated:[[NSClassFromString(@"SBApplicationController") sharedInstance] applicationWithDisplayIdentifier:item.id]];
 	  
+	  [[UIApplication sharedApplication] launchApplicationWithIdentifier:item.id suspended:NO];
 	  
     _isAppLaunched = YES;
 
