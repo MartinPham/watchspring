@@ -1,6 +1,6 @@
 Package: gg.ki.TestHook1
-Name: TestHook1
-Version: 1.0-1
+Name: WatchSpring
+Version: 1.0-2
 Description: 
 Section: Tweaks
 Depends: firmware (>= 8.0), mobilesubstrate, com.conradkramer.open
