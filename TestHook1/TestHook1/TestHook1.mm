@@ -61,9 +61,66 @@ CHOptimizedMethod(1, self, void, UIView, addSubview, UIView *, v) // hook method
 			if(self.tag != 181188 && v.tag != 30052014 && [self viewWithTag:30052014] == nil){
 				if([[self subviews] count] == 2){
 					self.tag = 181188;
+					
+					/*
+					NSLog(@"subviews= %@", [self subviews]);
 					for(UIView *sv in [self subviews]){
-						sv.hidden = YES;
+//						sv.hidden = YES;
+						for(UIView *ssv in [sv subviews]){
+							if(![ssv isKindOfClass:[NSClassFromString(@"SBIconScrollView") class]]){
+								ssv.hidden = YES;
+							}else if([ssv isKindOfClass:[NSClassFromString(@"SBRootIconListView") class]]){
+								for(UIView *sssv in [ssv subviews]){
+									sssv.hidden = YES;
+								}
+							}
+						}
 					}
+					 */
+					
+					UIView *mainView;
+					bool found = false;
+					for(UIView *sv in [self subviews]){
+						for(UIView *ssv in [sv subviews]){
+							if([ssv isKindOfClass:[NSClassFromString(@"SBIconScrollView") class]]){
+								mainView = sv;
+								found = true;
+								break;
+							}
+						}
+						if(found){
+							break;
+						}
+					}
+					
+					mainView.tag = 151289;
+//					NSLog(@"mainview = %@", [mainView recursiveDescription]);
+					
+					UIView *mainScrollView;
+					
+					for(UIView *sv in [self subviews]){
+						if(sv.tag == 151289){
+							// main view
+							for(UIView *ssv in [sv subviews]){
+								NSLog(@"ssv = %@", ssv);
+								if([ssv isKindOfClass:[NSClassFromString(@"SBIconScrollView") class]]){
+									for(UIView *sssv in [ssv subviews]){
+										sssv.hidden = YES;
+									}
+									mainScrollView = ssv;
+								}else{
+									NSLog(@"hide");
+									ssv.hidden = YES;
+								}
+							}
+						}else if(sv.tag == 30052014){
+							// watch
+						}else{
+							
+						}
+					}
+					
+					
 					
 					
 						NSLog(@"call me once");
@@ -97,8 +154,10 @@ CHOptimizedMethod(1, self, void, UIView, addSubview, UIView *, v) // hook method
 					
 						vc.view.tag = 30052014;
 						[vc.view initView];
-						[self addSubview:vc.view];
-						
+					
+					
+						[mainScrollView addSubview:vc.view];
+					
 						[vc viewDidLoad];
 						[vc viewWillAppear:YES];
 					

@@ -28,14 +28,19 @@
   if(_isAppLaunched == NO)
   {
 	  NSLog(@"id = %@", item.id);
-	  _appView.image = item.limg;
 	  
-	  if([item.icon.image isEqual:item.limg]){
-		  _appView.contentMode = UIViewContentModeCenter;
-	  }else{
-		  _appView.contentMode = UIViewContentModeScaleAspectFit;
-	  }
+//	  
+//	  _appView.image = item.limg;
+//	  
+//	  if([item.icon.image isEqual:item.limg]){
+//		  _appView.contentMode = UIViewContentModeCenter;
+//	  }else{
+//		  _appView.contentMode = UIViewContentModeScaleAspectFit;
+//	  }
 	 
+	  _appView.image = [[objc_getClass(@"SBAppSwitcherController") sharedController] _snapshotViewForDisplayItem:item.id];
+	  
+	  
 //	  id task = [objc_getClass("NSTask") new];
 //	  [task setLaunchPath:@"/usr/bin/open"];
 //	  [task setArguments:[NSArray arrayWithObject:item.id]];
